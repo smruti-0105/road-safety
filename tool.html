@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <style>
+    #project {
+      padding: 50px;
+      background-color: rgb(209, 233, 195);
+    }
+
+    #h2 {
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 20px;
+      color: black;
+    }
+
+    .group-card {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .project-card {
+      position: relative;
+      height: 400px;
+      width: 300px;
+      margin: 20px;
+      overflow: hidden;
+      border-radius: 60px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .project-img img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-description {
+      position: absolute;
+      top: 0%;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: left 0.5s ease;
+    }
+
+    .project-description h3 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #ffdd77;
+    }
+
+    .project-description p {
+      margin: 10px 0;
+      padding: 0 20px;
+      font-size: 1em;
+    }
+
+    .project-card:hover .project-description {
+      left: 0;
+
+    }
+
+    .view-botton {
+      text-decoration: none;
+      color: #fff;
+      background-color: #ff704d;
+      padding: 10px 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .scroll-container {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding: 20px;
+      scroll-behavior: smooth;
+      scrollbar-width: thin;
+      scrollbar-color: #ff5733 transparent;
+    }
+
+    .scroll-container::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .scroll-container::-webkit-scrollbar-thumb {
+      background-color: #ff5733;
+      border-radius: 10px;
+    }
+
+    .scroll-container::-webkit-scrollbar-track {
+      background-color: #ffffff;
+    }
+
+    #blog-section {
+      padding: 50px 0;
+      background-color: rgb(228, 234, 163);
+      text-align: center;
+    }
+
+    #blog-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      color: #000000;
+    }
+
+    .scroll-container {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding: 20px;
+      scroll-behavior: smooth;
+      scrollbar-width: thin;
+      scrollbar-color: #02270e transparent;
+    }
+
+    .scroll-container::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .scroll-container::-webkit-scrollbar-thumb {
+      background-color: #ff5733;
+      border-radius: 10px;
+    }
+
+    .scroll-container::-webkit-scrollbar-track {
+      background-color: #ffffff;
+    }
+
+    .blog-card {
+      min-width: 300px;
+      background-color: #68b76a;
+      border-radius: 60px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .blog-card:hover {
+      transform: scale(1.05);
+    }
+
+    .blog-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .blog-card h3 {
+      margin: 20px 0 10px;
+      font-size: 1.5em;
+      color: #f6f609;
+    }
+
+    .blog-card p {
+      padding: 0 20px;
+      font-size: 1em;
+      color: #fefafa;
+    }
+
+    .read-more {
+      text-decoration: none;
+      color: #fff;
+      background-color: #1e7418;
+      padding: 10px 20px;
+      margin: 20px;
+      border-radius: 5px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .read-more:hover {
+      background-color: #6d8770;
+    }
+  </style>
+  <section id="blog-section">
+    <h2 style="text-decoration-line: underline;">SAFETY TOOLS</h2>
+    <div class="scroll-container">
+      <div class="blog-card">
+        <img src="1METERMAINIMAGE_240x240.avif" alt="Blog 3">
+        <h3>Speed Bump</h3>
+        <p>These are designed to slow down the traffic in high-risk areas such as near schools, hospitals, or
+          residential areas. They effectively helps the driver to slow down the speed. </p> <a
+          href="https://www.sinoconcept.co.uk/car-park-safety-management/speed-bumps-and-speed-humps/what-is-speed-bump/" class="read-more">know More</a>
+      </div>
+      
+      <div class="blog-card">
+        <img src="3m-road-studs-300x300.webp" alt="Blog 3">
+        <h3>3M Road Studs</h3>
+        <p>3M™ Raised Pavement Markers are highly visible at night and in rainy conditions. Tough, impact-resistant
+          bodies and abrasion-resistant lenses ensure long-lasting performance and durability.</p>
+        <a href="https://www.3mindia.in/3M/en_IN/p/c/signage-marking/pavement-markings-accessories/" class="read-more">know More</a>
+      </div>
+      <div class="blog-card">
+        <img src="PACKOF2MAINIMAGE_240x240.avif" alt="Blog 3">
+        <h3>Road Safety Cone</h3>
+        <p>The parking barrier or road safety equipment are built with PVC red body has a wide silver reflectors that
+          creates a powerful visibility.The heavy rubber base makes the traffic cones strong and wind
+          resistant. These traffic cones are usually used to prevent accidents and entries in dangerous
+          areas. </p>
+        <a href="https://www.vectus.in/road-safety-products/traffic-management/barricades-traffic-cones" class="read-more">know More</a>
+      </div>
+      <div class="blog-card">
+        <img src="Helmet.webp" alt="Blog 3">
+        <h3>Safety Helmets</h3>
+        <p> Safety helmets are like tough, protective hats that shield your head from danger. For construction workers
+          high up on buildings or cyclists speeding down roads, a good helmet can be a lifesaver.</p>
+        <a href="https://globalehs.co.in/safety-helmet/"
+          class="read-more">know More</a>
+      </div>
+      <div class="blog-card">
+        <img src="MainImageredstrip_240x240.avif" alt="Blog 3">
+        <h3>Expandable Barricades</h3>
+        <p> Expandable barricades serve as portable barriers that can be effortlessly expanded, providing a
+          temporary solution for crowd control or blocking off restricted areas. These barricades are foldable, equipped
+          with 4 nuts and 4 screws to ensure road and traffic safety.</p>
+        <a href="https://www.pittman.ie/collections/expandable-barrier"
+          class="read-more">know More</a>
+      </div>
+      <div class="blog-card">
+        <img src="32INCHMAINIMAGE_1880x.webp" alt="Blog 3">
+        <h3>Convex Mirror</h3>
+        <p>The convex mirror is one of the most common road safety equipment. These are installed at blind spots and
+          sharp curves. They provides the drivers with a wider field of vision, allowing them to see oncoming traffic or
+          pedestrians, thus preventing collisions. </p>
+        <a href="https://ladwas.com/the-benefits-of-road-convex-mirrors-for-road-safety/"
+          class="read-more">know More</a>
+      </div>
+
+    </div>
+  </section>
+</body>
+
+</html>
